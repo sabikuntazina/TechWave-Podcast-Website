@@ -46,6 +46,11 @@
   border-radius: 1000px;
   border: none;
 }
+.btn:hover{
+    cursor: pointer;
+
+
+}
 .heading {
   font-size: 48px;
   font-weight: 600;
@@ -118,7 +123,9 @@ nav .hamburger-icon {
   justify-content: center;
   align-items: center;
 }
+
 .microphone {
+   
   background: linear-gradient(
     45deg,
     var(--gradient-yellow),
@@ -139,6 +146,26 @@ nav .hamburger-icon {
   border: 8px solid rgba(42, 24, 108, 1);
   position: relative;
   left: 42px;
+  animation: mic-animation 1s ease-in-out 0.1s infinite alternate;
+}
+@keyframes mic-animation {
+    0%{
+         border: 8px solid rgba(42, 24, 108, 1);
+
+
+    }
+    
+    50%{
+             border: 8px solid rgb(39, 9, 146);
+       
+    }
+    
+   
+    
+    100%{
+        border: 10px solid #00ff8884;
+    
+    }
 }
 .new-badge {
   position: relative;
@@ -151,6 +178,26 @@ nav .hamburger-icon {
   font-weight: 600;
   font-size: 18px;
   color: black;
+  animation: badge-animation 1s ease-out 0.1s infinite alternate;
+}
+@keyframes badge-animation {
+    0%{
+        transform: scale(1);
+
+
+    }
+    
+    50%{
+           transform: scale(1.2);
+       
+    }
+    
+   
+    
+    100%{
+       transform: scale(1.3);
+    
+    }
 }
 .hero-section h1 {
   font-size: 60px;
@@ -489,6 +536,7 @@ footer {
     font-size: 35px;
     font-weight: 600;
     line-height: 30px;
+    padding-bottom: 20px;
   }
   nav {
     padding: 20px;
