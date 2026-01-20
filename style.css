@@ -37,6 +37,7 @@
 
 header{
     background-color: var(--bg-color-1);
+    height: 100vh;
 }
 
 nav{
@@ -86,13 +87,16 @@ nav .hamburger-icon{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    /* background-attachment: fixed; */
+    min-height: 100vh;
     text-align: center;
+    /* height: 100vh; */
 }
 .microphone-parent{
     display: flex;
     justify-content: center;
     align-items: center;
+   
    
 }
 .microphone{
@@ -102,9 +106,25 @@ nav .hamburger-icon{
     align-items: center;
     height: 350px;
     width: 350px;
+    aspect-ratio: 1/1;
     border-radius: 50%;
      margin: 50px 0;
     border: 8px solid rgba(42, 24, 108, 1);
+         position: relative;
+    left: 42px;
+
+}
+.new-badge{
+   position: relative;
+       top: -99px;
+    /* left: 576px; */
+    right: 26px;
+    padding: 10px 22px;
+    background-color: rgba(0, 255, 136, 1);
+    border-radius: 1000px;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
 }
 .hero-section h1{
     font-size: 60px;
@@ -175,8 +195,12 @@ nav .hamburger-icon{
 
 .hero-section{
 
-   background-size: contain;
-    height: 60vh;
+     background: url('./assets/mobile-hero-section.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+ 
 }
 
 .microphone{
@@ -185,10 +209,20 @@ nav .hamburger-icon{
     border-radius: 50%;
      margin: 50px 0;
     border: 5px solid rgba(42, 24, 108, 1);
+        position: relative;
+    left: 35px;
 }
 .microphone img{
    width: 80px;
   
+}
+.new-badge{
+        top: -50px;
+        right: 6px;
+
+    padding: 8px 16px;
+    background-color: rgba(0, 255, 136, 1);
+    font-size: 16px;
 }
 .hero-section h1{
     font-size: 45px;
@@ -244,5 +278,66 @@ nav .hamburger-icon{
     align-items: center;
 
   }
+
+  /* hero section started  */
+
+.hero-section{
+
+     background: url('./assets/hero-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+ 
+}
+
+.microphone{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+     margin: 50px 0;
+    border: 5px solid rgba(42, 24, 108, 1);
+        position: relative;
+    left: 40px;
+}
+.microphone img{
+   width: 80px;
+  
+}
+.new-badge{
+                   top: -55px;
+        right: 4px;
+
+    padding: 8px 16px;
+    background-color: rgba(0, 255, 136, 1);
+    font-size: 16px;
+}
+.hero-section h1{
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 35px;
+}
+
+.hero-section button{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.hero-section .btn-hero {
+  display: inline-block;
+  border: 2px solid rgba(0, 255, 136, 1);
+  color: rgba(0, 255, 136, 1);
+     padding: 12px 16px;
+    border-radius: 1000px;
+    margin-left: 10px;
+}
+.hero-section .btn-hero i {
+   font-size: 20px;
+  background: rgba(0, 255, 136, 1);
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
     
 }
+    
