@@ -294,6 +294,86 @@ nav .hamburger-icon {
   padding-top: 100px;
 }
 
+/* podcast section started  */
+#podcast{
+      background: rgba(35, 14, 61, 1);
+  padding: 50px 0;
+}
+.video-container-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 50px 0;
+    gap: 40px;
+}
+.podcast-video-container{
+    background-color: rgba(44, 16, 82, 0.811);
+
+  border-radius: 40px;
+  text-align: left;
+}
+.podcast-video-container h2{
+    margin: 20px 0;
+    padding: 0 20px;
+}
+.podcast-video-container p, h5{
+    color: rgba(255, 255, 255, 0.632);
+    margin: 20px 0;
+    padding: 0 20px;
+}
+.podcast-video-container h5{
+    color: var(--light-green);
+    margin: 10px 0;
+    padding: 0 20px;
+    font-size: 24px;
+    padding: 10px 20px 40px 20px;
+}
+.podcast-video-container h5 i{
+    color: var(--light-green);
+
+}
+.video1{
+    background: url(./assets/ss1.jpg);
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 150px 20px;
+    border-radius: 40px 40px 0 0;
+}
+.video2{
+    background: url(./assets/ss2.jpg);
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   text-align: center;
+     padding: 150px 20px;
+         border-radius: 40px 40px 0 0;
+}
+
+.video4{
+    background: url(./assets/ss4.jpg);
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   text-align: center;
+   /* width: 100%; */
+     padding: 150px 0px;
+         border-radius: 40px 40px 0 0;
+}
+.video a{
+    text-decoration: none;
+}
+.video i{
+    display: inline;
+      background: linear-gradient(
+    45deg,
+    var(--gradient-yellow),
+    var(--gradient-pink),
+    var(--gradient-violet)
+  );
+  padding: 10px;
+    border-radius: 50%;
+}
 /* Host section started */
 #host-section {
   background: rgba(35, 14, 61, 1);
@@ -356,7 +436,7 @@ footer {
   text-align: center;
   /* height: 100vh; */
 
-  padding: 100px 0;
+  /* padding: 100px 0; */
 }
 .footer-parent{
     padding-top: 100px;
@@ -402,7 +482,7 @@ footer {
   }
 
   header,
-  .about-podcast #grid-section,#host-section {
+  .about-podcast #grid-section,#host-section,#podcast {
     max-width: 100%;
   }
   .heading {
@@ -556,6 +636,17 @@ footer {
     padding-top: 30px;
   }
 
+  /* podcast section started  */
+
+.video-container-parent{
+
+    grid-template-columns: repeat(1,1fr);
+    padding: 30px 0;
+    margin: 0 20px;
+    gap: 20px;
+}
+
+
   /* Host section started */
 .host-parent {
     flex-direction: column;
@@ -580,6 +671,8 @@ footer {
   background-size: 150% 100%;
   /* background-attachment: fixed; */
   text-align: center;
+  padding: 20px 0;
+
 
 }
 .footer-parent{
@@ -593,11 +686,14 @@ footer {
 
 .footer-icons a{
     display: inline-block;
-    text-decoration: none;
-    margin-left: 20px;
-    margin-top: 20px;
+
+  
+      margin-left:10px;
+    margin-top: 10px;
     margin-bottom: 20px;
-    color: rgba(255, 255, 255, 0.635);
+
+
+  
 
 }
 .footer-icons a i{
