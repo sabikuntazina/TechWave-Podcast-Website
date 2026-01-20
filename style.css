@@ -172,6 +172,7 @@ nav .hamburger-icon{
 
     padding: 20px 0;
     text-align: center;
+
 }
 .about-podcast-div>p{
     width: 800px;
@@ -217,10 +218,76 @@ margin-top: 60px;
 }
 
 
+/* grid section started  */
+#grid-section{
+   background: rgba(35, 14, 61, 1);
+padding: 50px 0;
+  
+}
 
 
+#Audio-Quality{
+    grid-area: Audio-Quality;
 
+}
+#Mobile-Friendly{
+     grid-area:Mobile-Friendly ;
 
+}
+#Global-Community{
+     grid-area:Global-Community ;
+}
+
+#Exclusive-Interviews{
+     grid-area:Exclusive-Interviews ;
+
+}
+#Rich-Resources{
+     grid-area:Rich-Resources ;
+}
+.grid-card-parent{
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+                        "Audio-Quality        Mobile-Friendly        Mobile-Friendly         "
+                        /* "Audio-Quality        Mobile-Friendly        Mobile-Friendly        " */
+                        "Audio-Quality        Global-Community       Global-Community         "
+                        /* "Audio-Quality        Global-Community       Global-Community        " */
+                        "Exclusive-Interviews Exclusive-Interviews     Rich-Resources "
+                        /* "Exclusive-Interviews Exclusive-Interviews      Rich-Resources " */
+                        
+                        ;
+}
+.grid-card{
+    background-color:rgb(44,16,82);
+    padding: 40px 30px;
+    border-radius: 40px;
+    text-align: left;
+    padding-right: 100px;
+
+}
+.grid-card i{
+    font-size: 40px;
+   background: linear-gradient(45deg,var(--gradient-yellow),var(--gradient-yellow), var(--gradient-pink),var(--gradient-pink),var(--gradient-violet),var(--gradient-violet));
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.grid-card h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-top: 16px;
+}
+.grid-card p{
+    color: rgba(255, 255, 255, 0.772);
+    line-height: 24px;
+    margin: 16px 0;
+}
+#Audio-Quality {
+    padding-top: 100px;
+    
+}
 
 
 
@@ -231,7 +298,7 @@ margin-top: 60px;
     margin: 0 0;
 }
 
-    header,.about-podcast{
+    header,.about-podcast #grid-section{
         max-width: 100%;
     }
     .heading{
@@ -365,6 +432,52 @@ margin-top: 60px;
  text-transform: uppercase;
  margin-top: 15px;
 
+}
+
+
+/* grid section started  */
+
+
+.grid-card-parent{
+    display: grid;
+    gap: 24px;
+    margin-top: 50px;
+
+    grid-template-areas: 
+                        "Audio-Quality    "         
+                        "Mobile-Friendly         "
+                        
+                        "Global-Community     "
+                     
+                        "Exclusive-Interviews"
+                        "  Rich-Resources "
+                       
+                        
+                        ;
+
+}
+.grid-card{
+ 
+    padding: 30px 10px;
+    margin: 0 10px;
+
+}
+.grid-card i{
+    font-size: 40px;
+
+}
+.grid-card h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.grid-card p{
+    line-height: 20px;
+    margin: 16px 0;
+}
+#Audio-Quality {
+    padding-top: 30px;
+    
 }
 
 
