@@ -411,14 +411,18 @@ nav .hamburger-icon {
     text-decoration: none;
 }
 .video i{
+    font-size: 25px;
     display: inline;
       background: linear-gradient(
     45deg,
     var(--gradient-yellow),
+    var(--gradient-yellow),
     var(--gradient-pink),
+    var(--gradient-pink),
+    var(--gradient-violet),
     var(--gradient-violet)
   );
-  padding: 10px;
+  padding: 20px;
     border-radius: 50%;
 }
 /* Host section started */
