@@ -191,7 +191,7 @@ margin: 30px 0;
 margin-top: 60px;
 
 }
-.about-poscast-card-parent{
+.about-podcast-card-parent{
     display: grid;
    grid-template-columns: repeat(4,1fr);
     gap: 80px;
@@ -347,6 +347,7 @@ margin-top: 60px;
    grid-template-columns: repeat(2,1fr);
     gap: 10px;
     margin: 20px 0;
+
 
 }
 .about-card{
